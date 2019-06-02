@@ -2372,14 +2372,16 @@ Project:    	DevFest
  }
  
  .about-event .content-column .text{
-	 position: relative;
-	 display: block;
-	 font-size: 15px;
-	 line-height: 28px;
-	 color: #707070;
-	 font-weight: 400;
-	 font-family: 'Poppins', sans-serif;
- }
+	position: relative;
+    display: block;
+    font-size: 15px;
+    line-height: 28px;
+    color: #505050;
+    font-weight: 300;
+    font-family: Product Sans;
+    letter-spacing: 1px;
+}
+ 
  
  
  
