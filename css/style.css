@@ -632,7 +632,7 @@ Project:    	DevFest
  
  .main-header.fixed-header{
 	 top: 0;
-	 background-color: #12114a;
+	 background-color: #000000;
 	 box-shadow: 0 0 10px rgba(0,0,0,.50);
  }
  
@@ -3195,7 +3195,7 @@ Project:    	DevFest
 	 background-repeat: no-repeat;
 	 background-position: center;
 	 background-size: cover;
-	 background-color: #12114a;
+	 background-color: #000;
  }
  
  .sponsor-section:before{
@@ -3917,7 +3917,7 @@ Project:    	DevFest
  
  .main-footer{
 	 position:relative;
-	 background-color:#12114a;
+	 background-color:#000000;
 	 padding: 140px 0 40px;
  }
  
