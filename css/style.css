@@ -642,6 +642,7 @@ Project:    	DevFest
 	 padding:0px 15px;
 	 width: 100%;
 	 margin: 0 auto;
+	 margin-left: 5%;
  }
  
  .main-header .header-upper{
@@ -1572,7 +1573,7 @@ Project:    	DevFest
  
  .banner-section .slide-item{
 	 position: relative;
-	 padding: 300px 0 320px;
+	 padding: 300px 30% 320px;
 	 background-repeat: no-repeat;
 	 background-position: center;
 	 background-size: cover;
@@ -1620,21 +1621,38 @@ Project:    	DevFest
 	 font-family: Product Sans;
 	 color:#ffffff;
 	 line-height:1.2em;
-	 font-weight:700;
-	 text-transform: uppercase;
-	 margin-bottom:30px;
+	 font-weight:600;
  }
+ .banner-section .content-box h5{
+	position:relative;
+	font-size:60px;
+	font-family: Product Sans;
+	color:#ffffff;
+	line-height:1.2em;
+	font-weight:500;
+	margin-bottom:30px;
+}
  
  .banner-section .content-box .text{
 	 position:relative;
-	 font-size:25px;
+	 text-align: center;
+	 font-size:35px;
 	 font-family: Product Sans;
 	 color: #ffffff;
 	 line-height:40px;
 	 font-weight: 400;
-	 margin-bottom:60px;
+	 margin-bottom:30px;
  }
- 
+ .banner-section .content-box .text1{
+	position:relative;
+	text-align: center;
+	font-size:45px;
+	font-family: Product Sans;
+	color: #ffffff;
+	line-height:40px;
+	font-weight: 400;
+	margin-bottom:60px;
+}
  .banner-section .content-box .btn-box{
 	 position: relative;
  }

@@ -20,8 +20,8 @@
 
 	.banner-section .slide-item.style-two .image-box{
 		width: 40%;
-		top: 40%;
-		left: 50px;
+		top: 20%;
+		left: -70px;
 	}
 
 	.float-text{
@@ -125,7 +125,7 @@
 		margin-right: 5px;
 		margin-left: 5px;
 	}
-
+	
 	.about-carousel .slide-item{
 		padding: 70px 0;
 	}
