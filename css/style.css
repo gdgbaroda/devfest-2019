@@ -639,7 +639,7 @@ Project:    	DevFest
  .main-header .header-upper .outer-container{
 	 position:relative;
 	 max-width: 1560px;
-	 padding:0px 15px;
+	 padding:0px 4%;
 	 width: 100%;
 	 margin: 0 auto;
 	 margin-left: 5%;
@@ -2865,7 +2865,7 @@ Project:    	DevFest
 	 top: 0;
 	 height: 100%;
 	 width: 100%;
-	 background-color: rgba(75,30,206,0.95);
+	 background-color: rgba(75,30,206,0.85);
 	 opacity: 0;
 	 border-radius: 10px;
 	 visibility: hidden;
