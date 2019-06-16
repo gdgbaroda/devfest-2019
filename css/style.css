@@ -425,6 +425,10 @@ Project:    	DevFest
  .pull-right{
 	 float: right;
  }
+
+ .pull-center{
+	 float: center;
+ }
  
  
  /*** 
@@ -1898,7 +1902,7 @@ Project:    	DevFest
  
  .banner-section-three .form-box .title-box{
 	 position: relative;
-	 padding: 60px 15px 95px;
+	 padding: 60px 15px 60px;
 	 text-align: center;
 	 background-color:#f20487;
  }
@@ -1939,7 +1943,7 @@ Project:    	DevFest
  
  .banner-section-three .register-form{
 	 position: relative;
-	 padding: 145px 50px 85px;
+	 padding: 60px 50px 85px;
  }
  
  .register-form .form-group{
