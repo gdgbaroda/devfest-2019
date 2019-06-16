@@ -1,0 +1,24 @@
+.main-header{
+    top: 0;
+    background-color: #000000;
+    box-shadow: 0 0 10px rgba(0,0,0,.50);
+}
+.banner-section .slide-item{
+
+    padding: 300px
+}
+.banner-section .text {
+    position: relative;
+    text-align: center;
+    font-size: 35px;
+    font-family: Product Sans;
+    color: #ffffff;
+    line-height: 40px;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+@media only screen and (max-width: 1600px){
+.banner-section .slide-item.style-two .image-box {
+
+}
+}
