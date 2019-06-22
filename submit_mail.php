@@ -22,7 +22,7 @@ if(isset($_POST["flag_from"]) && $_POST["flag_from"] == "inquiry") {
     echo sendEmail(
         $_POST["email"],
         'GDGDevFest2019',
-        "akhilkharva@gmail.com",
+        "gdgbaroda@gmail.com",
         "Business Inquiry from " . $_POST["name"],
         '',
         $_POST["email"]
@@ -32,7 +32,7 @@ if(isset($_POST['flag_from']) && ($_POST["flag_from"] == "subscribe")){
     echo sendEmail(
         $_POST["email"],
         'GDGDevFest2019',
-        "akhilkharva@gmail.com",
+        "gdgbaroda@gmail.com",
         "Subscribe me",
         "Subscribe for updates on GDGDevFest 2019: ".$_POST["email"],
         $_POST["email"]
