@@ -107,7 +107,7 @@ Project:    	DevFest
  a{
 	 text-decoration:none;
 	 cursor:pointer;
-	 color:#f20487;
+	 color:#4285f4;
  }
  
  button{
@@ -206,12 +206,12 @@ Project:    	DevFest
 	 line-height:20px;
 	 font-weight:500;
 	 padding:15px 40px 15px;
-	 background-color: #f20487;
+	 background-color: #0f9d57;
 	 border-radius: 8px;
  }
  
  .btn-style-one:hover{
-	 color:#f20487;
+	 color:#0f9d57;
 	 background-color: #ffffff;
  }
  
@@ -224,11 +224,11 @@ Project:    	DevFest
 	 line-height:20px;
 	 font-weight:500;
 	 padding:15px 40px 15px;
-	 background-color: #4b1ece;
+	 background-color: #0f9d57;
  }
  
  .btn-style-two:hover{
-	 color:#4b1ece;
+	 color:#0f9d57;
 	 background-color: #ffffff;
  }
  
@@ -241,13 +241,13 @@ Project:    	DevFest
 	 line-height:20px;
 	 font-weight:500;
 	 padding:15px 40px 15px;
-	 background-color: #f20487;
+	 background-color: #0f9d57;
 	 border-radius: 8px;
  }
  
  .btn-style-three:hover{
 	 color:#ffffff;
-	 background-color: #4b1ece;
+	 background-color: #fabb04;
  }
  
  /*Btn Style Four*/
@@ -264,7 +264,7 @@ Project:    	DevFest
  
  .btn-style-four:hover{
 	 color:#ffffff;
-	 background-color: #f20487;
+	 background-color: #0f9d57;
  }
  
  /*Btn Style Five*/
@@ -276,12 +276,12 @@ Project:    	DevFest
 	 line-height:20px;
 	 font-weight:500;
 	 padding:15px 40px 15px;
-	 background-color: #471cc6;
+	 background-color: #0f9d57;
  }
  
  .btn-style-five:hover{
 	 color:#ffffff;
-	 background-color: #f20487;
+	 background-color: #0f9d57;
  }
  
  /* List Style One */
@@ -311,7 +311,7 @@ Project:    	DevFest
  }
  
  .list-style-one li a:hover{
-	 color: #00e399;
+	 color: #0f9d57;
  }
  
  .list-style-one li:last-child{
@@ -354,7 +354,8 @@ Project:    	DevFest
 	 top: 0;
 	 font-size: 17px;
 	 line-height: 30px;
-	 color: #9746ea;
+	 /* hereherehere */
+	 color: #0f9d57;
 	 content: "\f1ce";
 	 font-family:"Flaticon";
  }
@@ -463,7 +464,7 @@ Project:    	DevFest
  
  .scroll-to-top:hover{
 	 color:#ffffff;
-	 background:#4b1ece;
+	 background:#4285f4;
  }
  
  
@@ -773,7 +774,7 @@ Project:    	DevFest
  
 	 
  .main-menu .navigation > li > ul > li > ul > li:hover > a{
-	 color:#25262c;
+	 color:#fabb04;
 	 background:#ffffff;
  }
  
@@ -853,7 +854,7 @@ Project:    	DevFest
  }
  
  .main-menu .navigation > li > ul > li:hover > a{
-	 border-left: 4px solid #f20487;
+	 border-left: 4px solid #0f9d57;
 	 background:#222222;
  }
  
@@ -925,7 +926,7 @@ Project:    	DevFest
  .main-menu .navigation > li > ul > li  > ul > li > a:hover{
 	 color: #ffffff;
 	 background:#222222;
-	 border-left: 4px solid #f20487;
+	 border-left: 4px solid #0f9d57;
  }
  
  .main-menu .navigation > li.dropdown:hover > ul{
@@ -1154,7 +1155,7 @@ Project:    	DevFest
  }
  
  .header-style-two.fixed-header .nav-toggler .nav-btn{
-	 background-color:#f20487;
+	 background-color:#0f9d57;
 	 color: #ffffff;
  }
  
@@ -1728,7 +1729,7 @@ Project:    	DevFest
  
  .banner-section .owl-next:hover,
  .banner-section .owl-prev:hover{
-	 color: #f20487;
+	 color: #0f9d57;
  }
  
  /*** 
@@ -1761,7 +1762,7 @@ Project:    	DevFest
 	 display: block;
 	 font-size: 34px;
 	 line-height: 1.2em;
-	 color: #f20487;
+	 color: #0f9d57;
 	 font-weight: 500;
 	 margin-bottom: 10px;
  }
@@ -1904,7 +1905,7 @@ Project:    	DevFest
 	 position: relative;
 	 padding: 60px 15px 60px;
 	 text-align: center;
-	 background-color:#f20487;
+	 background-color:#4285f4;
  }
  
  .banner-section-three .form-box .title-box h4{
@@ -1966,7 +1967,7 @@ Project:    	DevFest
 	 height: 55px;
 	 width: 100%;
 	 font-size: 16px;
-	 color: #707070;
+	 color: #12114a;
 	 line-height: 25px;
 	 font-weight: 400;
 	 padding: 20px 35px;
@@ -1982,7 +1983,7 @@ Project:    	DevFest
  .register-form .form-group input:focus,
  .register-form .form-group select:focus,
  .register-form .form-group textarea:focus{
-	 border-color:#f20487;
+	 border-color:#0f9d57;
  }
  
  .register-form .form-group textarea{
@@ -2069,7 +2070,7 @@ Project:    	DevFest
  }
  
  .feature-block-two h4 a:hover{
-	 color: #f20487;
+	 color: #0f9d57;
  }
  
  .feature-block-two .text{
@@ -2090,7 +2091,7 @@ Project:    	DevFest
  .feature-block-two .link-box a{
 	 font-size: 16px;
 	 line-height: 26px;
-	 color: #f20487;
+	 color: #0f9d57;
 	 font-weight: 500;
 	 opacity: 0;
 	 -webkit-transition: all 300ms ease;
@@ -2176,7 +2177,7 @@ Project:    	DevFest
 	 height: 100%;
 	 width: 100%;
 	 max-width: 970px;
-	 background-color:#4422a7;
+	 background-color:#0f9d57;
 	 border-radius: 15px;
 	 content: '';
  }
@@ -2222,7 +2223,7 @@ Project:    	DevFest
 	 font-size: 22px;
 	 font-family: Product Sans;
 	 line-height: 1.2em;
-	 color: #f20487;
+	 color: #0f9d57;
 	 font-weight: 500;
 	 margin-bottom: 25px;
  }
@@ -2522,7 +2523,7 @@ Project:    	DevFest
  }
  
  .speaker-block-two .overlay-box .link:hover{
-	 color: #f20487;
+	 color: #0f9d57;
  }
  
  .speaker-block-two .overlay-box .info{
@@ -2696,7 +2697,7 @@ Project:    	DevFest
  }
  
  .speaker-block-four .info-box .name a:hover{
-	 color: #4b1ece;
+	 color: #4285f4;
  }
  
  .speaker-block-four .info-box .designation{
@@ -2732,7 +2733,7 @@ Project:    	DevFest
  }
  
  .speaker-block-four .info-box .social-links li a:hover{
-	 color: #4b1ece;
+	 color: #4285f4;
  }
  
  /*=== Speaker Popup ===*/
@@ -2782,7 +2783,7 @@ Project:    	DevFest
  }
  
  .ts-speaker-popup .ts-speaker-popup-content .speaker-session-info p {
-	 color: #e7015e;
+	 color: #0f9d57;
 	 margin-bottom: 30px; 
  }
  
@@ -2792,7 +2793,7 @@ Project:    	DevFest
  }
  
  .ts-speaker-popup .ts-speaker-popup-content .ts-speakers-social a:hover {
-	 color: #e7015e; 
+	 color: #4285f4; 
  }
  
  .ts-speaker-popup button.mfp-close {
@@ -3179,7 +3180,7 @@ Project:    	DevFest
  
  .testimonial-section .owl-dot.active,
  .testimonial-section .owl-dot:hover{
-	 background-color:#4b1ece;
+	 background-color:#0f9d57;
  }
  
  
@@ -3428,7 +3429,7 @@ Project:    	DevFest
  .styled-pagination li a:hover,
  .styled-pagination li.active a{
 	 color:#ffffff;	
-	 background:#471cc6;
+	 background:#0f9d57;
  }
  
  /*** 
@@ -3538,7 +3539,7 @@ Project:    	DevFest
  }
  
  .location-block h4 a:hover{
-	 color: #f20487;
+	 color: #0f9d57;
  }
  
  .location-block .text{
@@ -3793,7 +3794,7 @@ Project:    	DevFest
 	 display: block;
 	 font-size: 16px;
 	 line-height: 1.2em;
-	 color: #12114a;
+	 color: #707070;
 	 font-weight: 700;
 	 margin-bottom: 18px;
  }
@@ -3813,7 +3814,7 @@ Project:    	DevFest
 	 width: 100%;
 	 font-size: 14px;
 	 line-height: 28px;
-	 color: #585e74;
+	 color: #12114a;
 	 font-weight: 400;
 	 height: 50px;
 	 padding: 10px 25px;
@@ -3830,7 +3831,7 @@ Project:    	DevFest
  .contact-form .form-group input:focus,
  .contact-form .form-group select:focus,
  .contact-form .form-group textarea:focus{
-	 border-color:#471cc6;
+	 border-color:#0f9d57;
  }
  
  .contact-form .form-group textarea{
@@ -3850,7 +3851,7 @@ Project:    	DevFest
  }
  
  .contact-form label.error{
-	 color: #ff0000;
+	 color: #0f9d57;
  }
  
  .contact-form .form-group .radio-option {
@@ -4007,7 +4008,7 @@ Project:    	DevFest
 	 width:100%;
 	 font-size:16px;
 	 line-height:30px;
-	 color:#818a94;
+	 color:#12114a;
 	 background:#ffffff;	
 	 padding:35px 40px;
 	 font-weight:400;
@@ -4090,7 +4091,7 @@ Project:    	DevFest
  }
  
  .main-footer .footer-nav ul li a:hover{
-	 color: #f20487;
+	 color: #0f9d57;
  }
  
  .main-footer .copyright{
@@ -4415,7 +4416,7 @@ Project:    	DevFest
 	 position: relative;
 	 display: block;
 	 font-size: 50px;
-	 color: #4b1ece;
+	 color: #4285f4;
 	 line-height: 180px;
 	 font-weight: 700;
 	 text-align: center;
@@ -4501,7 +4502,7 @@ Project:    	DevFest
  
  .coming-soon .emailed-form .form-group input[type="submit"]:hover,
  .coming-soon .emailed-form button:hover{
-	 color: #f20487;
+	 color: #0f9d57;
  }
  
  .social-icon-two{
