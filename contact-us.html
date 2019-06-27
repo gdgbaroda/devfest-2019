@@ -262,13 +262,13 @@
             alert('Please enter your email.');
             $('#email').focus();
             return false;
-        } else if(phone.trim() == ''){
-            alert('Please enter phone number.');
-            $('#phone').focus();
-            return false;
         } else if (email.trim() != '' && !reg.test(email)) {
             alert('Please enter valid email.');
             $('#email').focus();
+            return false;
+        } else if(phone.trim() == ''){
+            alert('Please enter phone number.');
+            $('#phone').focus();
             return false;
         } else if(question.trim() == ''){
             alert('Provide your question please.');
