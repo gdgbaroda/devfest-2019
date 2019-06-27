@@ -10,8 +10,8 @@
     <link href="css/responsive.css" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Product+Sans' rel='stylesheet' type='text/css'>
 
-    <link rel="shortcut icon" href="images/fav2.svg" type="image/x-icon">
-    <link rel="icon" href="images/fav2.svg" type="image/x-icon">
+    <link rel="shortcut icon" href="images/main-slider/logo.svg" type="image/x-icon">
+    <link rel="icon" href="images/main-slider/logo.svg" type="image/x-icon">
 
     <!-- Responsive -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -64,8 +64,10 @@
                         </nav>
 
                         <!-- btn box -->
-                        <div class="btn-box">
-                            <a href="#" class="theme-btn btn-style-one">Subscribe</a>
+						<div class="btn-box clearfixr">
+                            <!--<a href="#" class="theme-btn btn-style-two">Buy Ticket</a>-->
+                            <a href="" class="theme-btn btn-style-one" data-toggle="modal"
+                               data-target="#modalSubscriptionForm">Subscribe</a>
                         </div>
 
                     </div>
@@ -87,6 +89,37 @@
     </section>
     <!--End Page Title-->
 
+    <div class="modal fade" id="modalSubscriptionForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header text-center">
+                    <h4 class="modal-title w-100 font-weight-bold">Subscribe</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body mx-3">
+                    <p id="message_subscribe"></p>
+                    <form method="post" role="form" id="subscribe_update">
+                        <!--<div class="form-group">
+                            <label for="subscribe-name" class="col-form-label">Your Name:</label>
+                            <input type="text" class="form-control" id="subscribe-name" placeholder="Name" required>
+                        </div>-->
+                        <div class="form-group">
+                            <label for="subscribe-mail" class="col-form-label">Email:</label>
+                            <input type="email" class="form-control" name="subscribe-mail" id="subscribe-mail" value=""
+                                   placeholder="email@example.com" required>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer d-flex justify-content-center">
+                    <button class="theme-btn btn-style-five" onclick="submitSubscribeForm('subscribe', this)">Send <i
+                            class="fas fa-paper-plane-o ml-1"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- Speakers Section Two -->
 
     <!--End Speakers Section -->
@@ -102,582 +135,242 @@
             <div class="row">
 
                 <!-- Grid column -->
-                <div class="col-lg-3 col-md-6 mb-lg-0 mb-5">
+                <div class="col-lg-2 col-md-6 mb-lg-0 mb-5">
                     <div class="avatar mx-auto">
-                        <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(20).jpg"
+                        <img src="images/team/rahul.jpg"
                              class="rounded-circle z-depth-1"
-                             alt="Sample avatar">
+                             alt="">
                     </div>
-                    <h5 class="font-weight-bold mt-4 mb-3">Anna Williams</h5>
-                    <p class="text-uppercase blue-text"><strong>Graphic designer</strong></p>
-                    <p class="grey-text">Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur,
-                        adipisci sed quia non numquam modi tempora eius.</p>
+                    <h5 class="font-weight-bold mt-4 mb-3">Rahul Banker</h5>
                     <ul class="list-unstyled mb-0">
                         <!-- Facebook -->
-                        <a class="p-2 fa-lg fb-ic">
+                        <a class="p-2 fa-lg fb-ic" href="https://www.facebook.com/bankerrahul">
                             <i class="fab fa-facebook-f blue-text"> </i>
                         </a>
                         <!-- Twitter -->
+                        <a class="p-2 fa-lg tw-ic" href="https://twitter.com/bankerrahul">
+                            <i class="fab fa-twitter blue-text"> </i>
+                        </a>
+                        <!-- Linkedin -->
+                        <a class="p-2 fa-lg li-ic" href="https://www.linkedin.com/in/bankerrahul">
+                            <i class="fab fa-linkedin-in blue-text"> </i>
+                        </a>
+                    </ul>
+                </div>
+                <!-- Grid column -->
+
+                <!-- Grid column -->
+                <div class="col-lg-2 col-md-6 mb-lg-0 mb-5">
+                    <div class="avatar mx-auto">
+                        <img src="images/team/sneh.jpeg"
+                             class="rounded-circle z-depth-1"
+                             alt="">
+                    </div>
+                    <h5 class="font-weight-bold mt-4 mb-3">Sneh Pandya</h5>
+                    <ul class="list-unstyled mb-0">
+                        <!-- Facebook -->
+                        <a class="p-2 fa-lg fb-ic" href="https://www.facebook.com/SnehPandya18">
+                            <i class="fab fa-facebook-f blue-text"> </i>
+                        </a>
+                        <!-- Twitter -->
+                        <a class="p-2 fa-lg tw-ic" href="https://twitter.com/SnehPandya18">
+                            <i class="fab fa-twitter blue-text"> </i>
+                        <!-- Linkedin -->
+                        <a class="p-2 fa-lg li-ic" href="https://www.linkedin.com/in/SnehPandya18">
+                            <i class="fab fa-linkedin-in blue-text"> </i>
+                        </a>
+                    </ul>
+                </div>
+                <!-- Grid column -->
+
+                <!-- Grid column -->
+                <!-- <div class="col-lg-2 col-md-6 mb-md-0 mb-5">
+                    <div class="avatar mx-auto">
+                        <img src="images/team/namrata.jpg"
+                             class="rounded-circle z-depth-1"
+                             alt="">
+                    </div>
+                    <h5 class="font-weight-bold mt-4 mb-3">Namrata Brahmkshatriya</h5>
+                    <ul class="list-unstyled mb-0">
+                        <a class="p-2 fa-lg fb-ic">
+                            <i class="fab fa-facebook-f blue-text"> </i>
+                        </a>
                         <a class="p-2 fa-lg tw-ic">
                             <i class="fab fa-twitter blue-text"> </i>
                         </a>
-                        <!-- Instagram -->
-                        <a class="p-2 fa-lg ins-ic">
-                            <i class="fab fa-instagram blue-text"> </i>
+                        <a class="p-2 fa-lg li-ic">
+                            <i class="fab fa-linkedin-in blue-text"> </i>
+                        </a>
+                    </ul>
+                </div> -->
+                <!-- Grid column -->
+
+                <!-- Grid column -->
+                <!-- <div class="col-lg-2 col-md-6">
+                    <div class="avatar mx-auto">
+                        <img src="images/team/prachi.jpg"
+                             class="rounded-circle z-depth-1"
+                             alt="">
+                    </div>
+                    <h5 class="font-weight-bold mt-4 mb-3">Prachi Durge</h5>
+                    <ul class="list-unstyled mb-0">
+                        <a class="p-2 fa-lg fb-ic">
+                            <i class="fab fa-facebook-f blue-text"> </i>
+                        </a>
+                        <a class="p-2 fa-lg tw-ic">
+                            <i class="fab fa-twitter blue-text"> </i>
+                        </a>
+                        <a class="p-2 fa-lg li-ic">
+                            <i class="fab fa-linkedin-in blue-text"> </i>
+                        </a>
+                    </ul>
+                </div> -->
+                <!-- Grid column -->
+
+                <!-- Grid column -->
+                <div class="col-lg-2 col-md-6">
+                    <div class="avatar mx-auto">
+                        <img src="images/team/hardip.jpg"
+                             class="rounded-circle z-depth-1"
+                             alt="">
+                    </div>
+                    <h5 class="font-weight-bold mt-4 mb-3">Hardip Patel</h5>
+                    <ul class="list-unstyled mb-0">
+                        <!-- Facebook -->
+                        <a class="p-2 fa-lg fb-ic" href="https://www.facebook.com/AboutHardipPatel">
+                            <i class="fab fa-facebook-f blue-text"> </i>
+                        </a>
+                        <!-- Twitter -->
+                        <a class="p-2 fa-lg tw-ic" href="https://twitter.com/HardipDPatel">
+                            <i class="fab fa-twitter blue-text"> </i>
+                        </a>
+                        <!-- Linkedin -->
+                        <a class="p-2 fa-lg li-ic" href="https://www.linkedin.com/in/patelhardip/">
+                            <i class="fab fa-linkedin-in blue-text"> </i>
+                        </a>
+                    </ul>
+                </div>
+                <!-- Grid column -->
+                <!-- Grid column -->
+                <div class="col-lg-2 col-md-6 mb-lg-0 mb-5">
+                    <div class="avatar mx-auto">
+                        <img src="images/team/hardik.jpg"
+                             class="rounded-circle z-depth-1"
+                             alt="">
+                    </div>
+                    <h5 class="font-weight-bold mt-4 mb-3">Hardik Mistry</h5>
+                    <ul class="list-unstyled mb-0">
+                        <!-- Facebook -->
+                        <a class="p-2 fa-lg fb-ic" href="https://www.facebook.com/mistryhardik05">
+                            <i class="fab fa-facebook-f blue-text"> </i>
+                        </a>
+                        <!-- Twitter -->
+                        <a class="p-2 fa-lg tw-ic" href="https://twitter.com/mistryhardik05">
+                            <i class="fab fa-twitter blue-text"> </i>
+                        </a>
+                        <!-- Linkedin -->
+                        <a class="p-2 fa-lg li-ic" href="https://www.linkedin.com/in/mistryhardik05/">
+                            <i class="fab fa-linkedin-in blue-text"> </i>
                         </a>
                     </ul>
                 </div>
                 <!-- Grid column -->
 
                 <!-- Grid column -->
-                <div class="col-lg-3 col-md-6 mb-lg-0 mb-5">
+                <div class="col-lg-2 col-md-6 mb-lg-0 mb-5">
                     <div class="avatar mx-auto">
-                        <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(3).jpg"
+                        <img src="images/team/aditya.jpg"
                              class="rounded-circle z-depth-1"
-                             alt="Sample avatar">
+                             alt="">
                     </div>
-                    <h5 class="font-weight-bold mt-4 mb-3">John Doe</h5>
-                    <p class="text-uppercase blue-text"><strong>Web developer</strong></p>
-                    <p class="grey-text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem ipsa accusantium
-                        doloremque rem laudantium totam aperiam.</p>
+                    <h5 class="font-weight-bold mt-4 mb-3">Aditya Patel</h5>
+                    <ul class="list-unstyled mb-0">
+                    </ul>
+                </div>
+                <!-- Grid column -->
+            </div>
+            <!-- Grid row -->
+        </div>
+
+        <div class="auto container" style="margin-top: 60px">
+            <!-- Grid row -->
+            <div class="row">
+                <!-- Grid column -->
+                <div class="col-lg-2 col-md-6 mb-md-0 mb-5">
+                    <div class="avatar mx-auto">
+                        <img src="images/team/dron.jpg"
+                             class="rounded-circle z-depth-1"
+                             alt="">
+                    </div>
+                    <h5 class="font-weight-bold mt-4 mb-3">Dron Trivedi</h5>
                     <ul class="list-unstyled mb-0">
                         <!-- Facebook -->
-                        <a class="p-2 fa-lg fb-ic">
+                        <a class="p-2 fa-lg fb-ic" href="https://www.facebook.com/drontrivedi">
                             <i class="fab fa-facebook-f blue-text"> </i>
                         </a>
-                        <!-- Instagram -->
-                        <a class="p-2 fa-lg ins-ic">
-                            <i class="fab fa-instagram blue-text"> </i>
+                        <!-- Twitter -->
+                        <a class="p-2 fa-lg tw-ic" href="https://twitter.com/trivedidron">
+                            <i class="fab fa-twitter blue-text"> </i>
+                        </a>
+                        <!-- Linkedin -->
+                        <a class="p-2 fa-lg li-ic" href="https://www.linkedin.com/in/drontrivedi/">
+                            <i class="fab fa-linkedin-in blue-text"> </i>
                         </a>
                     </ul>
                 </div>
                 <!-- Grid column -->
 
                 <!-- Grid column -->
-                <div class="col-lg-3 col-md-6 mb-md-0 mb-5">
+                <div class="col-lg-2 col-md-6">
                     <div class="avatar mx-auto">
-                        <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(30).jpg"
+                        <img src="images/team/chintan.jpg"
                              class="rounded-circle z-depth-1"
-                             alt="Sample avatar">
+                             alt="">
                     </div>
-                    <h5 class="font-weight-bold mt-4 mb-3">Maria Smith</h5>
-                    <p class="text-uppercase blue-text"><strong>Photographer</strong></p>
-                    <p class="grey-text">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-                        deserunt
-                        mollit anim est fugiat nulla id eu laborum.</p>
+                    <h5 class="font-weight-bold mt-4 mb-3">Chintan Shah</h5>
                     <ul class="list-unstyled mb-0">
                         <!-- Facebook -->
-                        <a class="p-2 fa-lg fb-ic">
+                        <a class="p-2 fa-lg fb-ic" href="https://www.facebook.com/chintan1193">
                             <i class="fab fa-facebook-f blue-text"> </i>
                         </a>
-                        <!-- Instagram -->
-                        <a class="p-2 fa-lg ins-ic">
-                            <i class="fab fa-instagram blue-text"> </i>
+                        <!-- Twitter -->
+                        <a class="p-2 fa-lg tw-ic" href="https://twitter.com/chintanshah1193">
+                            <i class="fab fa-twitter blue-text"> </i>
                         </a>
-                        <!-- Dribbble -->
-                        <a class="p-2 fa-lg ins-ic">
-                            <i class="fab fa-dribbble blue-text"> </i>
+                        <!-- Linkedin -->
+                        <a class="p-2 fa-lg li-ic" href="https://www.linkedin.com/in/chintan1193/">
+                            <i class="fab fa-linkedin-in blue-text"> </i>
                         </a>
                     </ul>
                 </div>
                 <!-- Grid column -->
 
                 <!-- Grid column -->
-                <div class="col-lg-3 col-md-6">
+                <!-- <div class="col-lg-2 col-md-6">
                     <div class="avatar mx-auto">
-                        <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(32).jpg"
+                        <img src="images/team/prachi.jpg"
                              class="rounded-circle z-depth-1"
-                             alt="Sample avatar">
+                             alt="">
                     </div>
-                    <h5 class="font-weight-bold mt-4 mb-3">Tom Adams</h5>
-                    <p class="text-uppercase blue-text"><strong>Backend developer</strong></p>
-                    <p class="grey-text">Perspiciatis repellendus ad odit consequuntur, eveniet earum nisi qui
-                        consectetur
-                        totam officia voluptates perferendis voluptatibus aut.</p>
+                    <h5 class="font-weight-bold mt-4 mb-3">Prachi Durge</h5>
                     <ul class="list-unstyled mb-0">
-                        <!-- Facebook -->
                         <a class="p-2 fa-lg fb-ic">
                             <i class="fab fa-facebook-f blue-text"> </i>
                         </a>
-                        <!-- Github -->
-                        <a class="p-2 fa-lg ins-ic">
-                            <i class="fab fa-github blue-text"> </i>
+                        <a class="p-2 fa-lg tw-ic">
+                            <i class="fab fa-twitter blue-text"> </i>
+                        </a>
+                        <a class="p-2 fa-lg li-ic">
+                            <i class="fab fa-linkedin-in blue-text"> </i>
                         </a>
                     </ul>
-                </div>
+                </div> -->
                 <!-- Grid column -->
 
             </div>
             <!-- Grid row -->
         </div>
     </section>
-    <!-- Section: Team v.1 -->
-
-    <!-- Speakers Section Four -->
-    <!--<section class="speakers-section-four">
-        <div class="auto-container">
-            <div class="row">
-                &lt;!&ndash; Speaker Block Four &ndash;&gt;
-                <div class="speaker-block-four col-lg-4 col-md-6 col-sm-12 wow zoomIn">
-
-
-                    <a href="#popup_1" class="link view-speaker ts-image-popup" data-effect="mfp-zoom-in">
-                        <div class="inner-box">
-                            <div class="image-box">
-                                <figure class="image-box"><img src="images/resource/speaker-3-1.jpg" alt=""></figure>
-                            </div>
-                            <div class="info-box">
-                                <div class="inner">
-                                    <h5 class="name"><a href="#popup_1" class="link view-speaker ts-image-popup"
-                                                        data-effect="mfp-zoom-in">Harman 1</a></h5>
-                                    <span class="designation">Founder of ceo</span>
-                                    <ul class="social-links">
-                                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                                        <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-
-                &lt;!&ndash; Speaker Block Four &ndash;&gt;
-                <div class="speaker-block-four col-lg-4 col-md-6 col-sm-12 wow zoomIn">
-                    <a href="#popup_2" class="link view-speaker ts-image-popup" data-effect="mfp-zoom-in">
-                        <div class="inner-box">
-                            <div class="image-box">
-                                <figure class="image-box"><img src="images/resource/speaker-3-2.jpg" alt=""></figure>
-                            </div>
-                            <div class="info-box">
-                                <div class="inner">
-                                    <h5 class="name"><a href="#popup_2" class="link view-speaker ts-image-popup"
-                                                        data-effect="mfp-zoom-in">Elizabeth 2</a></h5>
-                                    <span class="designation">Founder of ceo</span>
-                                    <ul class="social-links">
-                                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                                        <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-
-                &lt;!&ndash; Speaker Block Four &ndash;&gt;
-                <div class="speaker-block-four col-lg-4 col-md-6 col-sm-12 wow zoomIn">
-                    <a href="#popup_3" class="link view-speaker ts-image-popup" data-effect="mfp-zoom-in">
-
-                        <div class="inner-box">
-                            <div class="image-box">
-                                <figure class="image-box"><img src="images/resource/speaker-3-3.jpg" alt=""></figure>
-                            </div>
-                            <div class="info-box">
-                                <div class="inner">
-                                    <h5 class="name"><a href="#popup_3" class="link view-speaker ts-image-popup"
-                                                        data-effect="mfp-zoom-in">Bernard 3</a></h5>
-                                    <span class="designation">Founder of ceo</span>
-                                    <ul class="social-links">
-                                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                                        <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-
-                &lt;!&ndash; Speaker Block Four &ndash;&gt;
-                <div class="speaker-block-four col-lg-4 col-md-6 col-sm-12 wow zoomIn">
-                    <a href="#popup_4" class="link view-speaker ts-image-popup" data-effect="mfp-zoom-in">
-
-                        <div class="inner-box">
-
-                            <div class="image-box">
-                                <figure class="image-box"><img src="images/resource/speaker-3-4.jpg" alt=""></figure>
-                            </div>
-                            <div class="info-box">
-                                <div class="inner">
-                                    <h5 class="name"><a href="#popup_4" class="link view-speaker ts-image-popup"
-                                                        data-effect="mfp-zoom-in">James 4</a></h5>
-                                    <span class="designation">Founder of ceo</span>
-                                    <ul class="social-links">
-                                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                                        <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-
-
-                <div id="popup_1" class="container ts-speaker-popup mfp-hide">
-                    <div class="row">
-                        <div class="col-lg-6">
-                            <div class="ts-speaker-popup-img">
-                                <img src="images/resource/speaker-popup.jpg" alt="">
-                            </div>
-                        </div>&lt;!&ndash; col end&ndash;&gt;
-                        <div class="col-lg-6">
-                            <div class="ts-speaker-popup-content">
-                                <h3 class="ts-title">Adarsh1 Deni</h3>
-                                <span class="speakder-designation">General Manager</span>
-                                <p>
-                                    World is committed to making participation in the event a harass ment free
-                                    experience
-                                    for everyone, regardless of level experience gender, gender identity and expression
-                                </p>
-                                <h4 class="session-name">
-                                    Sessions by David
-                                </h4>
-                                <div class="row">
-                                    <div class="col-lg-6">
-                                        <div class="speaker-session-info">
-                                            <h4>Day 1</h4>
-                                            <span> 10.30 - 11.30 am </span>
-                                            <p> Marketing Matters </p>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-6">
-                                        <div class="speaker-session-info">
-                                            <h4>Day 1</h4>
-                                            <span> 10.30 - 11.30 am </span>
-                                            <p> Marketing Matters </p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="ts-speakers-social">
-                                    <a href="#"><i class="fab fa-facebook"></i></a>
-                                    <a href="#"><i class="fab fa-twitter"></i></a>
-                                    <a href="#"><i class="fab fa-linkedin"></i></a>
-                                </div>
-                            </div>&lt;!&ndash; ts-speaker-popup-content end&ndash;&gt;
-                        </div>
-                    </div>
-                </div>
-
-
-                <div id="popup_2" class="container ts-speaker-popup mfp-hide">
-                    <div class="row">
-                        <div class="col-lg-6">
-                            <div class="ts-speaker-popup-img">
-                                <img src="images/resource/speaker-popup.jpg" alt="">
-                            </div>
-                        </div>&lt;!&ndash; col end&ndash;&gt;
-                        <div class="col-lg-6">
-                            <div class="ts-speaker-popup-content">
-                                <h3 class="ts-title">Adarsh2 Deni</h3>
-                                <span class="speakder-designation">General Manager</span>
-                                <p>
-                                    World is committed to making participation in the event a harass ment free
-                                    experience
-                                    for everyone, regardless of level experience gender, gender identity and expression
-                                </p>
-                                <h4 class="session-name">
-                                    Sessions by David
-                                </h4>
-                                <div class="row">
-                                    <div class="col-lg-6">
-                                        <div class="speaker-session-info">
-                                            <h4>Day 1</h4>
-                                            <span> 10.30 - 11.30 am </span>
-                                            <p> Marketing Matters </p>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-6">
-                                        <div class="speaker-session-info">
-                                            <h4>Day 1</h4>
-                                            <span> 10.30 - 11.30 am </span>
-                                            <p> Marketing Matters </p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="ts-speakers-social">
-                                    <a href="#"><i class="fab fa-facebook"></i></a>
-                                    <a href="#"><i class="fab fa-twitter"></i></a>
-                                    <a href="#"><i class="fab fa-linkedin"></i></a>
-                                </div>
-                            </div>&lt;!&ndash; ts-speaker-popup-content end&ndash;&gt;
-                        </div>
-                    </div>
-                </div>
-                <div id="popup_3" class="container ts-speaker-popup mfp-hide">
-                    <div class="row">
-                        <div class="col-lg-6">
-                            <div class="ts-speaker-popup-img">
-                                <img src="images/resource/speaker-popup.jpg" alt="">
-                            </div>
-                        </div>&lt;!&ndash; col end&ndash;&gt;
-                        <div class="col-lg-6">
-                            <div class="ts-speaker-popup-content">
-                                <h3 class="ts-title">Adarsh3 Deni</h3>
-                                <span class="speakder-designation">General Manager</span>
-                                <p>
-                                    World is committed to making participation in the event a harass ment free
-                                    experience
-                                    for everyone, regardless of level experience gender, gender identity and expression
-                                </p>
-                                <h4 class="session-name">
-                                    Sessions by David
-                                </h4>
-                                <div class="row">
-                                    <div class="col-lg-6">
-                                        <div class="speaker-session-info">
-                                            <h4>Day 1</h4>
-                                            <span> 10.30 - 11.30 am </span>
-                                            <p> Marketing Matters </p>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-6">
-                                        <div class="speaker-session-info">
-                                            <h4>Day 1</h4>
-                                            <span> 10.30 - 11.30 am </span>
-                                            <p> Marketing Matters </p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="ts-speakers-social">
-                                    <a href="#"><i class="fab fa-facebook"></i></a>
-                                    <a href="#"><i class="fab fa-twitter"></i></a>
-                                    <a href="#"><i class="fab fa-linkedin"></i></a>
-                                </div>
-                            </div>&lt;!&ndash; ts-speaker-popup-content end&ndash;&gt;
-                        </div>
-                    </div>
-                </div>
-                <div id="popup_4" class="container ts-speaker-popup mfp-hide">
-                    <div class="row">
-                        <div class="col-lg-6">
-                            <div class="ts-speaker-popup-img">
-                                <img src="images/resource/speaker-popup.jpg" alt="">
-                            </div>
-                        </div>&lt;!&ndash; col end&ndash;&gt;
-                        <div class="col-lg-6">
-                            <div class="ts-speaker-popup-content">
-                                <h3 class="ts-title">Adarsh4 Deni</h3>
-                                <span class="speakder-designation">General Manager</span>
-                                <p>
-                                    World is committed to making participation in the event a harass ment free
-                                    experience
-                                    for everyone, regardless of level experience gender, gender identity and expression
-                                </p>
-                                <h4 class="session-name">
-                                    Sessions by David
-                                </h4>
-                                <div class="row">
-                                    <div class="col-lg-6">
-                                        <div class="speaker-session-info">
-                                            <h4>Day 1</h4>
-                                            <span> 10.30 - 11.30 am </span>
-                                            <p> Marketing Matters </p>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-6">
-                                        <div class="speaker-session-info">
-                                            <h4>Day 1</h4>
-                                            <span> 10.30 - 11.30 am </span>
-                                            <p> Marketing Matters </p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="ts-speakers-social">
-                                    <a href="#"><i class="fab fa-facebook"></i></a>
-                                    <a href="#"><i class="fab fa-twitter"></i></a>
-                                    <a href="#"><i class="fab fa-linkedin"></i></a>
-                                </div>
-                            </div>&lt;!&ndash; ts-speaker-popup-content end&ndash;&gt;
-                        </div>
-                    </div>
-                </div>
-                <div id="popup_5" class="container ts-speaker-popup mfp-hide">
-                    <div class="row">
-                        <div class="col-lg-6">
-                            <div class="ts-speaker-popup-img">
-                                <img src="images/resource/speaker-popup.jpg" alt="">
-                            </div>
-                        </div>&lt;!&ndash; col end&ndash;&gt;
-                        <div class="col-lg-6">
-                            <div class="ts-speaker-popup-content">
-                                <h3 class="ts-title">Adarsh5 Deni</h3>
-                                <span class="speakder-designation">General Manager</span>
-                                <p>
-                                    World is committed to making participation in the event a harass ment free
-                                    experience
-                                    for everyone, regardless of level experience gender, gender identity and expression
-                                </p>
-                                <h4 class="session-name">
-                                    Sessions by David
-                                </h4>
-                                <div class="row">
-                                    <div class="col-lg-6">
-                                        <div class="speaker-session-info">
-                                            <h4>Day 1</h4>
-                                            <span> 10.30 - 11.30 am </span>
-                                            <p> Marketing Matters </p>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-6">
-                                        <div class="speaker-session-info">
-                                            <h4>Day 1</h4>
-                                            <span> 10.30 - 11.30 am </span>
-                                            <p> Marketing Matters </p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="ts-speakers-social">
-                                    <a href="#"><i class="fab fa-facebook"></i></a>
-                                    <a href="#"><i class="fab fa-twitter"></i></a>
-                                    <a href="#"><i class="fab fa-linkedin"></i></a>
-                                </div>
-                            </div>&lt;!&ndash; ts-speaker-popup-content end&ndash;&gt;
-                        </div>
-                    </div>
-                </div>
-                <div id="popup_6" class="container ts-speaker-popup mfp-hide">
-                    <div class="row">
-                        <div class="col-lg-6">
-                            <div class="ts-speaker-popup-img">
-                                <img src="images/resource/speaker-popup.jpg" alt="">
-                            </div>
-                        </div>&lt;!&ndash; col end&ndash;&gt;
-                        <div class="col-lg-6">
-                            <div class="ts-speaker-popup-content">
-                                <h3 class="ts-title">Adarsh6 Deni</h3>
-                                <span class="speakder-designation">General Manager</span>
-                                <p>
-                                    World is committed to making participation in the event a harass ment free
-                                    experience
-                                    for everyone, regardless of level experience gender, gender identity and expression
-                                </p>
-                                <h4 class="session-name">
-                                    Sessions by David
-                                </h4>
-                                <div class="row">
-                                    <div class="col-lg-6">
-                                        <div class="speaker-session-info">
-                                            <h4>Day 1</h4>
-                                            <span> 10.30 - 11.30 am </span>
-                                            <p> Marketing Matters </p>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-6">
-                                        <div class="speaker-session-info">
-                                            <h4>Day 1</h4>
-                                            <span> 10.30 - 11.30 am </span>
-                                            <p> Marketing Matters </p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="ts-speakers-social">
-                                    <a href="#"><i class="fab fa-facebook"></i></a>
-                                    <a href="#"><i class="fab fa-twitter"></i></a>
-                                    <a href="#"><i class="fab fa-linkedin"></i></a>
-                                </div>
-                            </div>&lt;!&ndash; ts-speaker-popup-content end&ndash;&gt;
-                        </div>
-                    </div>
-                </div>
-                <div id="popup_1" class="container ts-speaker-popup mfp-hide">
-                    <div class="row">
-                        <div class="col-lg-6">
-                            <div class="ts-speaker-popup-img">
-                                <img src="images/resource/speaker-popup.jpg" alt="">
-                            </div>
-                        </div>&lt;!&ndash; col end&ndash;&gt;
-                        <div class="col-lg-6">
-                            <div class="ts-speaker-popup-content">
-                                <h3 class="ts-title">Adarsh2 Deni</h3>
-                                <span class="speakder-designation">General Manager</span>
-                                <p>
-                                    World is committed to making participation in the event a harass ment free
-                                    experience
-                                    for everyone, regardless of level experience gender, gender identity and expression
-                                </p>
-                                <h4 class="session-name">
-                                    Sessions by David
-                                </h4>
-                                <div class="row">
-                                    <div class="col-lg-6">
-                                        <div class="speaker-session-info">
-                                            <h4>Day 1</h4>
-                                            <span> 10.30 - 11.30 am </span>
-                                            <p> Marketing Matters </p>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-6">
-                                        <div class="speaker-session-info">
-                                            <h4>Day 1</h4>
-                                            <span> 10.30 - 11.30 am </span>
-                                            <p> Marketing Matters </p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="ts-speakers-social">
-                                    <a href="#"><i class="fab fa-facebook"></i></a>
-                                    <a href="#"><i class="fab fa-twitter"></i></a>
-                                    <a href="#"><i class="fab fa-linkedin"></i></a>
-                                </div>
-                            </div>&lt;!&ndash; ts-speaker-popup-content end&ndash;&gt;
-                        </div>
-                    </div>
-                </div>
-                &lt;!&ndash; Speaker Block Four &ndash;&gt;
-                <div class="speaker-block-four col-lg-4 col-md-6 col-sm-12 wow zoomIn">
-                    <a href="#popup_5" class="link view-speaker ts-image-popup" data-effect="mfp-zoom-in">
-
-                        <div class="inner-box">
-                            <div class="image-box">
-                                <figure class="image-box"><img src="images/resource/speaker-3-5.jpg" alt=""></figure>
-                            </div>
-                            <div class="info-box">
-                                <div class="inner">
-                                    <h5 class="name"><a href="#popup_5" class="link view-speaker ts-image-popup"
-                                                        data-effect="mfp-zoom-in">Mike 5</a></h5>
-                                    <span class="designation">Founder of ceo</span>
-                                    <ul class="social-links">
-                                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                                        <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-
-                &lt;!&ndash; Speaker Block Four &ndash;&gt;
-                <div class="speaker-block-four col-lg-4 col-md-6 col-sm-12 wow zoomIn">
-
-
-                    <a href="#popup_6" class="link view-speaker ts-image-popup" data-effect="mfp-zoom-in">
-
-                        <div class="inner-box">
-                            <div class="image-box">
-                                <figure class="image-box"><img src="images/resource/speaker-3-6.jpg" alt=""></figure>
-                            </div>
-                            <div class="info-box">
-                                <div class="inner">
-                                    <h5 class="name"><a href="#popup_6" class="link view-speaker ts-image-popup"
-                                                        data-effect="mfp-zoom-in">Antonio 6</a></h5>
-                                    <span class="designation">Founder of ceo</span>
-                                    <ul class="social-links">
-                                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                                        <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>-->
-    <!--End Speakers Section Four -->
 
     <!-- Main Footer -->
     <div class="main-footer style-two">
@@ -709,28 +402,28 @@
             <!-- Social Links -->
             <div class="social-links">
                 <ul>
-                    <li><a href="#"><span class="fab fa-facebook-f"></span></a></li>
-                    <li><a href="#"><span class="fab fa-twitter"></span></a></li>
-                    <li><a href="#"><span class="fab fa-youtube"></span></a></li>
-                    <li><a href="#"><span class="fab fa-meetup"></span></a></li>
+                    <li><a href="https://www.meetup.com/gdgbaroda"><span class="fab fa-meetup"></span></a></li>
+                    <li><a href="https://www.facebook.com/gdgbaroda"><span class="fab fa-facebook-f"></span></a></li>
+                    <li><a href="https://www.twitter.com/gdgbaroda"><span class="fab fa-twitter"></span></a></li>
+                    <li><a href="https://www.youtube.com/c/gdgbaroda"><span class="fab fa-youtube"></span></a></li>
                 </ul>
             </div>
             <div class="footer-nav">
                 <ul>
-                    <li><a style="color: #7A7A7D;" href="#">About</a></li>
-                    <li><a style="color: #7A7A7D;" href="#">Blog</a></li>
-                    <li><a style="color: #7A7A7D;" href="#">Tickets</a></li>
-                    <li><a style="color: #7A7A7D;" href="#">Speakers</a></li>
-                    <li><a style="color: #7A7A7D;" href="#">Schedule</a></li>
-                    <li><a style="color: #7A7A7D;" href="#">Team</a></li>
-                    <li><a style="color: #7A7A7D;" href="#">Contact</a></li>
+                    <li><a style="color: #7A7A7D;" href="https://gdgbaroda.com/all-posts/" target="_blank">Blog</a></li>
+                    <!-- <li><a style="color: #7A7A7D;" href="#">Tickets</a></li> -->
+                    <li><a style="color: #7A7A7D;" href="speakers.html">Speakers</a></li>
+                    <li><a style="color: #7A7A7D;" href="schedule.html">Schedule</a></li>
+                    <li><a style="color: #7A7A7D;" href="team.html">Team</a></li>
+                    <li><a style="color: #7A7A7D;" href="contact-us.html">Contact Us</a></li>
+                    <li><a style="color: #7A7A7D;" href="code-of-conduct.html">Code of Conduct</a></li>
                 </ul>
             </div>
 
             <!-- Footer Bottom -->
             <div class="footer-bottom clearfix">
-                <div class="copyright">Copyright &copy; 2019. All Rights Reserved.</div>
-
+                <div class="copyright">Copyright &copy; 2019 based on <a href="https://github.com/gdgbaroda/devfest-2019">GDG Baroda</a>.
+                </div>
             </div>
             <!-- Copyright -->
         </div>
