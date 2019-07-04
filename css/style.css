@@ -726,7 +726,7 @@ Project:    	DevFest
  .main-menu .navigation > li > a{
 	 position:relative;
 	 display:block;
-	 font-size:16px;
+	 font-size:20px;
 	 font-family: Product Sans;
 	 line-height:30px;
 	 font-weight:400;
@@ -3234,8 +3234,8 @@ Project:    	DevFest
  .sponsor-section .client-logo{
 	 position: relative;
 	 display: inline-block;
-	 margin-bottom: 60px;
-	 margin: 0 14px 60px;
+	 margin-bottom: 30px;
+	 margin: 0 15px 30px;
  }
  
  .sponsor-section .client-logo .image{
