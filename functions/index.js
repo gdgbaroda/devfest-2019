@@ -1,3 +1,18 @@
+/**
+ * Copyright 2015 Google Inc. All Rights Reserved.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
 'use strict';
 
 const functions = require('firebase-functions');
@@ -16,20 +31,20 @@ const mailTransport = nodemailer.createTransport({
 });
 
 // Sends an email confirmation when a user changes his mailing list subscription.
-exports.sendEmailConfirmation = functions.database.ref('/users/{uid}').onWrite(async (change) => {
-  const snapshot = change.after;
-  const val = snapshot.val();
+exports.sendEmailConfirmation = functions.database.ref('/users/{uid}').onWrite(async (change, context) => {
+  const beforeData = change.before.val();
+  const afterData = change.after.val();
 
-  if (!snapshot.changed('subscribedToMailingList')) {
+  if (!afterData) {
     return null;
   }
 
   const mailOptions = {
     from: '"GDG Baroda" <gdgbaroda@gmail.com>',
-    to: val.email,
+    to: afterData.email,
   };
 
-  const subscribed = val.subscribedToMailingList;
+  const subscribed = afterData.subscribedToMailingList;
 
   // Building Email message.
   mailOptions.subject = subscribed ? 'Welcome: GDG DevFest Baroda 2019' : 'Sad to see you go :`(';
@@ -39,7 +54,7 @@ exports.sendEmailConfirmation = functions.database.ref('/users/{uid}').onWrite(a
   
   try {
     await mailTransport.sendMail(mailOptions);
-    console.log(`New ${subscribed ? '' : 'un'}subscription confirmation email sent to:`, val.email);
+    console.log(`New ${subscribed ? '' : 'un'}subscription confirmation email sent to:`, afterData.email);
   } catch(error) {
     console.error('There was an error while sending the email:', error);
   }

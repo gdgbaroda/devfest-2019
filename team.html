@@ -100,7 +100,7 @@
                 </div>
                 <div class="modal-body mx-3">
                     <p id="message_subscribe"></p>
-                    <form method="post" role="form" id="subscribe_update">
+                    <form method="post" role="form" id="email-container">
                         <!--<div class="form-group">
                             <label for="subscribe-name" class="col-form-label">Your Name:</label>
                             <input type="text" class="form-control" id="subscribe-name" placeholder="Name" required>
@@ -389,7 +389,7 @@
             <div class="newsletter-form">
                 <form method="post" role="form" id="subscribe">
                     <div class="form-group">
-                        <input type="email" name="subscribe_mail" id="subscribe_mail" value=""
+                        <input type="email" name="email-container" id="email-container" value=""
                                placeholder="email@example.com" required>
                         <p style="display: none" id="message_subscribe"></p>
                         <button type="submit" class="theme-btn btn-style-three"
@@ -434,8 +434,9 @@
 </div>
 <div class="scroll-to-top scroll-to-target" data-target="html"><span class="fa fa-angle-double-up"></span></div>
 <script src="js/jquery.js"></script>
-<script src="/__/firebase/6.2.4/firebase-app.js"></script>
-<script src="/__/firebase/6.2.4/firebase-database.js"></script>
+<script src="/__/firebase/6.3.0/firebase-app.js"></script>
+<script src="/__/firebase/6.3.0/firebase-auth.js"></script>
+<script src="/__/firebase/6.3.0/firebase-database.js"></script>
 <script src="/__/firebase/init.js"></script>
 <script src="js/main.js"></script>
 <script src="js/popper.min.js"></script>
@@ -455,7 +456,7 @@
 
         var reg = /^[A-Z0-9._%+-]+@([A-Z0-9-]+\.)+[A-Z]{2,4}$/i;
         // var name = $('#subscribe-name').val();
-        var email = $('#subscribe_mail').val();
+        var email = $('#email-container').val();
 
         if (email.trim() == '') {
             alert('Please enter your email.');
