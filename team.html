@@ -65,9 +65,7 @@
 
                         <!-- btn box -->
 						<div class="btn-box clearfixr">
-                            <!--<a href="#" class="theme-btn btn-style-two">Buy Ticket</a>-->
-                            <a href="" class="theme-btn btn-style-one" data-toggle="modal"
-                               data-target="#modalSubscriptionForm">Subscribe</a>
+                            <button class="theme-btn btn-style-one" id="sign-in-button">Subscribe</button>
                         </div>
 
                     </div>
@@ -88,37 +86,6 @@
         </div>
     </section>
     <!--End Page Title-->
-
-    <div class="modal fade" id="modalSubscriptionForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header text-center">
-                    <h4 class="modal-title w-100 font-weight-bold">Subscribe</h4>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body mx-3">
-                    <p id="message_subscribe"></p>
-                    <form method="post" role="form" id="subscribe_update">
-                        <!--<div class="form-group">
-                            <label for="subscribe-name" class="col-form-label">Your Name:</label>
-                            <input type="text" class="form-control" id="subscribe-name" placeholder="Name" required>
-                        </div>-->
-                        <div class="form-group">
-                            <label for="subscribe-mail" class="col-form-label">Email:</label>
-                            <input type="email" class="form-control" name="subscribe-mail" id="subscribe-mail" value=""
-                                   placeholder="email@example.com" required>
-                        </div>
-                    </form>
-                </div>
-                <div class="modal-footer d-flex justify-content-center">
-                    <button class="theme-btn btn-style-five" onclick="submitSubscribeForm('subscribe', this)">Send <i
-                            class="fas fa-paper-plane-o ml-1"></i></button>
-                </div>
-            </div>
-        </div>
-    </div>
 
     <!-- Speakers Section Two -->
 
@@ -385,18 +352,8 @@
                 <h2>Subscribe To Updates</h2>
             </div>
 
-            <!--Newsletter Form-->
-            <div class="newsletter-form">
-                <form method="post" role="form" id="subscribe">
-                    <div class="form-group">
-                        <input type="email" name="subscribe_mail" id="subscribe_mail" value=""
-                               placeholder="email@example.com" required>
-                        <p style="display: none" id="message_subscribe"></p>
-                        <button type="submit" class="theme-btn btn-style-three"
-                                onclick="submitSubscribeForm('subscribe', this)">Send
-                        </button>
-                    </div>
-                </form>
+            <div class="col-md-12 text-center text " style="padding-bottom: 40px">
+                <button class="btn-box clearfixr theme-btn btn-style-one" id="sign-in-button">Subscribe</button>
             </div>
 
             <!-- Social Links -->
@@ -434,6 +391,11 @@
 </div>
 <div class="scroll-to-top scroll-to-target" data-target="html"><span class="fa fa-angle-double-up"></span></div>
 <script src="js/jquery.js"></script>
+<script src="/__/firebase/6.3.0/firebase-app.js"></script>
+<script src="/__/firebase/6.3.0/firebase-auth.js"></script>
+<script src="/__/firebase/6.3.0/firebase-database.js"></script>
+<script src="/__/firebase/init.js"></script>
+<script src="js/main.js"></script>
 <script src="js/popper.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/jquery-ui.js"></script>
@@ -445,50 +407,5 @@
 <script src="js/wow.js"></script>
 <script src="js/countdown.js"></script>
 <script src="js/script.js"></script>
-
-<script>
-    function submitSubscribeForm(flag_from, obj) {
-
-        var reg = /^[A-Z0-9._%+-]+@([A-Z0-9-]+\.)+[A-Z]{2,4}$/i;
-        // var name = $('#subscribe-name').val();
-        var email = $('#subscribe_mail').val();
-
-        if (email.trim() == '') {
-            alert('Please enter your email.');
-            $('#inputEmail').focus();
-            return false;
-        } else if (email.trim() != '' && !reg.test(email)) {
-            alert('Please enter valid email.');
-            $('#inputEmail').focus();
-            return false;
-        } else {
-            $(obj).prop("disabled", true);
-            $(obj).text("Please Wait...");
-            $.ajax({
-                type: 'POST',
-                url: 'submit_mail.php',
-                data: '&email=' + email + '&flag_from=' + flag_from,
-                cache: false,
-                beforeSend: function () {
-                    $('.submitBtn').attr("disabled", "disabled");
-                    $('.modal-body').css('opacity', '.5');
-                },
-                success: function (html) {
-                    console.log(html);
-                    document.getElementById('message_' + flag_from).innerHTML = html;
-                    $(obj).prop("disabled", false);
-                    $(obj).text("Sent");
-
-                    setTimeout(function () {
-                        location.reload();
-                    }, 1000);
-                }
-            });
-        }
-    }
-</script>
-
-
 </body>
-
 </html>
