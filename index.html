@@ -166,8 +166,7 @@
                         <h2>GDG DevFest</h2>
                         <h1>Baroda 2019</h1>
                     </div>
-                    <div class="col-md-12 text-center text lcs" style="font-size: 45px; padding: 60px 0px 30px;">Learn. Create. Share.
-                    </div>
+                    <div class="col-md-12 text-center text lcs" style="font-size: 45px; padding: 60px 0px 30px;">Learn. Create. Share.</div>
                     <div class="col-md-12 text-center text date-class" style="font-size: 65px; font-weight: 600">September 22, 2019
                     </div>
                     <div class="col-md-12 text-center text " style="padding: 40px">
@@ -558,11 +557,11 @@
             <div class="row">
 
                 <div class="client-logo col-lg-3 col-md-6 col-sm-12">
-                    <figure class="image"><a href="#"><img src="https://devfest.gdgbaroda.com/images/logos/google.svg"
+                    <figure class="image"><a href="https://www.google.com/"><img src="https://devfest.gdgbaroda.com/images/logos/google.svg"
                                                            alt="" style="height:4em"></a></figure>
                 </div>
                 <div class="client-logo col-lg-3 col-md-6 col-sm-12">
-                    <figure class="image"><a href="#"><img src="https://devfest.gdgbaroda.com/images/logos/gdg-x.svg"
+                    <figure class="image"><a href="https://www.github.com/gdg-x"><img src="https://devfest.gdgbaroda.com/images/logos/gdg-x.svg"
                                                           alt="" style="height:4em"></a></figure>
                 </div>
             </div>
@@ -571,7 +570,24 @@
             color: rgb(63, 63, 63)">Template Creator</h2>
             <div class="row">
                 <div class="client-logo col-lg-3 col-md-6 col-sm-12">
-                    <figure class="image"><a href="#"><img src="images/GDG Baroda Gray.png" style="height:4em"></a>
+                    <figure class="image"><a href="https://gdgbaroda.com/"><img src="images/gdgbaroda.png" style="height:4em"></a>
+                    </figure>
+                </div>
+                <div class="client-logo col-lg-3 col-md-6 col-sm-12">
+                    <figure class="image"><a href="https://gdgbaroda.com/"><img src="images/" style="height:4em"></a>
+                    </figure>
+                </div>
+            </div>
+            <h2 style="padding:20px;
+            font-family: Product Sans;
+            color: rgb(63, 63, 63)">Global Initiatives</h2>
+            <div class="row">
+                <div class="client-logo col-lg-3 col-md-6 col-sm-12">
+                    <figure class="image"><a href="https://developers.google.com/community/"><img src="images/googledevs.png" style="height:4em; padding: 1em"></a>
+                    </figure>
+                </div>
+                <div class="client-logo col-lg-3 col-md-6 col-sm-12">
+                    <figure class="image"><a href="https://www.womentechmakers.com/"><img src="images/wtm.svg" style="height:4em; padding: 1em"></a>
                     </figure>
                 </div>
             </div>
@@ -635,7 +651,7 @@
                                     <div class="info-box">
                                         <div class="thumb"><img src="images/resource/harsh.jpg" alt=""></div>
                                         <h5 class="name">Harsh Dattani</h5>
-                                        <span class="designation">Program Manager, Developer Relations Team, Google India</span>
+                                        <span class="designation">Community Manager, Developer Relations Team, Google India</span>
                                     </div>
                                 </div>
                             </div>
@@ -673,7 +689,7 @@
                 </div>
             </div>
             <div class="btn-box">
-                <a href="#" class="theme-btn btn-style-four">Become a sponsor</a>
+                <a href="mailto:gdgbaroda@gmail.com?Subject=Regarding%20GDG%20DevFest%20Sponsorship" target="_blank" class="theme-btn btn-style-four">Become a sponsor</a>
             </div>
         </div>
     </section>
@@ -692,14 +708,8 @@
                 <h2>Subscribe To Updates</h2>
             </div>
 
-            <!--Newsletter Form-->
-            <div class="newsletter-form">
-                <form method="post" role="form" id="subscribe">
-                    <div class="form-group">
-                        <input type="email" name="email-container" id="email-container"  value="" placeholder="email@example.com" required>
-                        <button id="subscribe-button" type="submit" class="theme-btn btn-style-three">Send</button>
-                    </div>
-                </form>
+            <div class="col-md-12 text-center text " style="padding-bottom: 40px">
+                <button class="btn-box clearfixr theme-btn btn-style-one" id="sign-in-button">Subscribe</button>
             </div>
 
             <!-- Social Links -->
@@ -757,86 +767,5 @@
 <script src="https://maps.google.com/maps/api/js?key=AIzaSyBfEWMfXP5oFOdeASa5lUjNynph5Q9vO48"></script>
 <script src="js/map-script.js"></script>
 <!--End Google Map APi-->
-
-<script>
-    function submitContactForm(flag_from, obj) {
-
-        var reg = /^[A-Z0-9._%+-]+@([A-Z0-9-]+\.)+[A-Z]{2,4}$/i;
-        // var name = $('#subscribe-name').val();
-        var email = $('#email-container').val();
-
-        if (email.trim() == '') {
-            alert('Please enter your email.');
-            $('#inputEmail').focus();
-            return false;
-        } else if (email.trim() != '' && !reg.test(email)) {
-            alert('Please enter valid email.');
-            $('#inputEmail').focus();
-            return false;
-        } else {
-            $(obj).prop("disabled", true);
-            $(obj).text("Please Wait...");
-            $.ajax({
-                type: 'POST',
-                url: 'submit_mail.php',
-                data: '&email=' + email + '&flag_from=' + flag_from,
-                cache: false,
-                beforeSend: function () {
-                    $('.submitBtn').attr("disabled", "disabled");
-                    $('.modal-body').css('opacity', '.5');
-                },
-                success: function (html) {
-                    console.log(html);
-                    document.getElementById('message_' + flag_from).innerHTML = html;
-                    $(obj).prop("disabled", false);
-                    $(obj).text("Sent");
-
-                    setTimeout(function () {
-                        location.reload();
-                    }, 1000);
-                }
-            });
-        }
-    }
-
-    function submitSubscribeForm(flag_from, obj) {
-        var reg = /^[A-Z0-9._%+-]+@([A-Z0-9-]+\.)+[A-Z]{2,4}$/i;
-        // var name = $('#subscribe-name').val();
-        var email = $('#subscribe-mail').val();
-
-        if (email.trim() == '') {
-            alert('Please enter your email.');
-            $('#inputEmail').focus();
-            return false;
-        } else if (email.trim() != '' && !reg.test(email)) {
-            alert('Please enter valid email.');
-            $('#inputEmail').focus();
-            return false;
-        } else {
-            $(obj).prop("disabled", true);
-            $(obj).text("Please Wait...");
-            $.ajax({
-                type: 'POST',
-                url: 'submit_mail.php',
-                data: '&email=' + email + '&flag_from=' + flag_from,
-                cache: false,
-                beforeSend: function () {
-                    $('.submitBtn').attr("disabled", "disabled");
-                    $('.modal-body').css('opacity', '.5');
-                },
-                success: function (html) {
-                    console.log(html);
-                    document.getElementById('message_' + flag_from).innerHTML = html;
-                    $(obj).prop("disabled", false);
-                    $(obj).text("SEND");
-
-                    setTimeout(function () {
-                        location.reload();
-                    }, 1000);
-                }
-            });
-        }
-    }
-</script>
 </body>
 </html>

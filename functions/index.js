@@ -49,7 +49,7 @@ exports.sendEmailConfirmation = functions.database.ref('/users/{uid}').onWrite(a
   // Building Email message.
   mailOptions.subject = subscribed ? 'Welcome: GDG DevFest Baroda 2019' : 'Sad to see you go :`(';
   mailOptions.text = subscribed ?
-      'Thanks you for subscribing to receive GDG DevFest Baroda 2019 updates. You will receive our upcoming updates as we announce them. This email is not vaild as a confirmation to attend the event.' :
+      'Thanks you for subscribing to receive GDG DevFest Baroda 2019 updates!\n\nYou will receive our upcoming updates as we announce them.\n\nJoin us here: https://bit.ly/join_gdgbaroda\n\nNOTE: This email is not vaild as a confirmation to attend the event.' :
       'You have successfully unsubscribed to GDG DevFest Baroda 2019 updates.';
   
   try {
