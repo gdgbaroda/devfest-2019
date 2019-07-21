@@ -19,11 +19,13 @@ function InitBinding() {
   // Shortcuts to DOM Elements.
   // this.subscribeButton = document.getElementById('subscribe-button');
   this.signInButton = document.getElementById('sign-in-button');
+  this.signInButton2 = document.getElementById('sign-in-button-2');
   this.emailContainer = document.getElementById('email-container');
 
   // Bind events.
   // this.subscribeButton.addEventListener('click', this.subscribe.bind(this));
   this.signInButton.addEventListener('click', this.signIn.bind(this));
+  this.signInButton2.addEventListener('click', this.signIn.bind(this));
   firebase.auth().onAuthStateChanged(this.onAuthStateChanged.bind(this));
 }
 
