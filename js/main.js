@@ -17,12 +17,12 @@
 
 function InitBinding() {
   // Shortcuts to DOM Elements.
-  this.subscribeButton = document.getElementById('subscribe-button');
+  // this.subscribeButton = document.getElementById('subscribe-button');
   this.signInButton = document.getElementById('sign-in-button');
   this.emailContainer = document.getElementById('email-container');
-  
+
   // Bind events.
-  this.subscribeButton.addEventListener('click', this.subscribe.bind(this));
+  // this.subscribeButton.addEventListener('click', this.subscribe.bind(this));
   this.signInButton.addEventListener('click', this.signIn.bind(this));
   firebase.auth().onAuthStateChanged(this.onAuthStateChanged.bind(this));
 }
@@ -34,9 +34,9 @@ InitBinding.prototype.onAuthStateChanged = function(user) {
     this.userRef = firebase.database().ref('users/' + user.uid);
     this.userRef.on('value', function(data) {
       if (data.val() && data.val().subscribedToMailingList) {
-        this.subscribeButton.style.display = 'none';
+        // this.subscribeButton.style.display = 'none';
       } else {
-        this.subscribeButton.style.display = 'inline-block';
+        // this.subscribeButton.style.display = 'inline-block';
       }
     }.bind(this));
   } else {
