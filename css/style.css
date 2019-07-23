@@ -1297,7 +1297,6 @@ Project:    	DevFest
 	 top: 20px;
 	 height: 30px;
 	 width: 30px;
-	 background-image: url(../images/icons/menu-before.png);
 	 opacity: .10;
 	 content:"";
 	 -webkit-transition:all 500ms ease;
@@ -1588,36 +1587,10 @@ Project:    	DevFest
 	 background-size: cover;
 	 overflow: hidden;
  }
- 
- .banner-section .icon-circle-11{
-	 left: -455px;
-	 bottom: -80px;
-	 opacity: .30;
- }
- 
- .banner-section .icon-circle-2{
-	 left: -70px;
-	 bottom: 440px;
-	 opacity: .15;
- }
- 
- .banner-section .icon-circle-3{
-	 left: 250px;
-	 bottom: 105px;
-	 opacity: .37;
- }
- 
- .banner-section .icon-circle-4{
-	 right: -305px;
-	 top: 150px;
-	 opacity: .50;
- }
- 
- 
+
  .banner-section .slide-item .auto-container{
 	 position: relative;
  }
- 
  
  .banner-section .content-box{
 	 position:relative;
@@ -2305,19 +2278,7 @@ Project:    	DevFest
 	 background-color: #f8f8fa;
 	 padding: 130px 0 130px;
  }
- 
- .icon-circle-13{
-	 height: 100px;
-	 width: 100px;
-	 background-image: url(../images/icons/circle-13.png);
- }
- 
- .icon-circle-14{
-	 height: 20px;
-	 width: 20px;
-	 background-image: url(../images/icons/circle-14.png);
- }
- 
+
  .icon-triangle-1{
 	 height: 45px;
 	 width: 38px;
@@ -2328,27 +2289,6 @@ Project:    	DevFest
 	 height: 36px;
 	 width: 33px;
 	 background-image: url(../images/icons/triangle-2.png);
- }
- 
- .about-event .icon-circle-13{
-	 right: -270px;
-	 bottom: 300px;
- }
- 
- .about-event .icon-circle-14{
-	 top: 204px;
-	 left: -270px;
- }
- 
- .about-event .icon-circle-14:nth-child(2){
-	 top: auto;
-	 bottom: 112px;
-	 left: 170px;
- }
- 
- .icon-triangle-1{
-	 left: -260px;
-	 bottom: 80px;
  }
  
  .icon-triangle-2{
@@ -2475,7 +2415,6 @@ Project:    	DevFest
 	 top: -35px;
 	 height: 114px;
 	 width:204px;
-	 background-image: url(../images/icons/icon-dots-4.png);
 	 content: "";
  }
  
@@ -2584,7 +2523,6 @@ Project:    	DevFest
 	 height: 772px;
 	 content: '';
 	 opacity: 0.04;
-	 background-image: url(../images/icons/shape-1.png);
 	 background-repeat: no-repeat;
 	 background-position: center;
  }
@@ -2599,7 +2537,6 @@ Project:    	DevFest
 	 top: -32px;
 	 height: 114px;
 	 width: 204px;
-	 background-image: url(../images/icons/icon-dots-3.png);
 	 content: "";
  }
  
@@ -3022,28 +2959,6 @@ Project:    	DevFest
 	 background-color: #f8f8fa;
  }
  
- .mix-icon-3{
-	 height: 85px;
-	 width: 105px;
-	 background-image: url(../images/icons/mix-icon-3.png);
- }
- 
- .icon-heart{
-	 height: 37px;
-	 width: 34px;
-	 background-image: url(../images/icons/icon-heart.png);
- }
- 
- .testimonial-section .mix-icon-3{
-	 left: -320px;
-	 top: 90px;
- }
- 
- .testimonial-section .icon-heart{
-	 right: -230px;
-	 bottom: 100px;
- }
- 
  .testimonial-section .icon-twist-line-2{
 	 bottom: 0;
 	 left: -140px;
@@ -3332,7 +3247,6 @@ Project:    	DevFest
 	 height: 772px;
 	 content: '';
 	 opacity: 0.04;
-	 background-image: url(../images/icons/shape-1.png);
 	 background-repeat: no-repeat;
 	 background-position: center;
  }
@@ -3466,12 +3380,6 @@ Project:    	DevFest
 	 background-image: url(../images/icons/icon-dots-2.png);
  }
  
- .icon-lines{
-	 height: 482px;
-	 width: 482px;
-	 background-image: url(../images/icons/icon-lines.png);
- }
- 
  .location-section .icon-dots{
 	 left: -375px;
 	 top: 0;
@@ -3482,12 +3390,6 @@ Project:    	DevFest
 	 right: -110px;
 	 top: 345px;
 	 opacity: 0.10;
- }
- 
- .location-section .icon-lines{
-	 right: -575px;
-	 bottom: -10px;
-	 opacity: 0.06;
  }
  
  .location-section .blocks-column{
@@ -3558,14 +3460,6 @@ Project:    	DevFest
  
  .icon-balloon{
 	 background-image:url(../images/icons/icon-balloon.png);
- }
- 
- .icon-information{
-	 background-image:url(../images/icons/icon-information.png);
- }
- 
- .icon-paper-plane{
-	 background-image:url(../images/icons/icon-paper-plane.png);
  }
  
  .location-section .map-column{
@@ -3980,7 +3874,6 @@ Project:    	DevFest
 	 bottom: 0;
 	 height: 100%;
 	 width: 100%;
-	 background-image: url(../images/icons/footer-bg.png);
 	 background-repeat: no-repeat;
 	 background-position: right bottom;
 	 content: "";
@@ -4347,20 +4240,9 @@ Project:    	DevFest
 	 padding:80px 0 100px;
  }
  
- .coming-soon .icon-circle-11{
-	 top: 80px;
-	 left: -505px;
-	 opacity: 0.50;
- }
- 
  .coming-soon .icon-twist-line-1{
 	 top: 135px;
 	 left: 270px;
- }
- 
- .coming-soon .icon-circle-3{
-	 right: -50px;
-	 top: 85px;
  }
  
  .coming-soon .icon-cross-1{
@@ -4371,12 +4253,6 @@ Project:    	DevFest
  .coming-soon .icon-circle-12{
 	 left: -10px;
 	 bottom: 160px;
- }
- 
- .coming-soon .icon-circle-2{
-	 right: -300px;
-	 bottom: 240px;
-	 opacity: .40;
  }
  
  .coming-soon .icon-twist-line-2{
