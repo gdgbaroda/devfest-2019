@@ -4330,10 +4330,6 @@ var widgetsAccordion = $.widget( "ui.accordion", {
 		event: "click",
 		header: "> li > :first-child, > :not(li):even",
 		heightStyle: "auto",
-		icons: {
-			activeHeader: "ui-icon-triangle-1-s",
-			header: "ui-icon-triangle-1-e"
-		},
 
 		// Callbacks
 		activate: null,
@@ -13831,9 +13827,6 @@ var widgetsSelectmenu = $.widget( "ui.selectmenu", [ $.ui.formResetMixin, {
 			"ui-selectmenu-button-closed": "ui-corner-all"
 		},
 		disabled: null,
-		icons: {
-			button: "ui-icon-triangle-1-s"
-		},
 		position: {
 			my: "left top",
 			at: "left bottom",
@@ -16779,10 +16772,6 @@ $.widget( "ui.spinner", {
 			"ui-spinner-up": "ui-corner-tr"
 		},
 		culture: null,
-		icons: {
-			down: "ui-icon-triangle-1-s",
-			up: "ui-icon-triangle-1-n"
-		},
 		incremental: true,
 		max: null,
 		min: null,
