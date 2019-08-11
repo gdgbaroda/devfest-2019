@@ -2117,7 +2117,7 @@ Project:    	DevFest
  
  .about-section .float-text{
 	 position: absolute;
-	 right: -30px;
+	 right: 0px;
 	 top: 140px;
  }
  
@@ -3135,7 +3135,7 @@ Project:    	DevFest
  
  
  .sponsor-section .float-text{
-	 right: -90px;
+	 right: 0px;
 	 top: 65px;
 	 color: #ffffff;
 	 opacity: 0.02;
@@ -3224,7 +3224,7 @@ Project:    	DevFest
  }
  
  .sponsor-section.style-three .icon-circle-9{
-	 right: 100px;
+	 right: -100px;
 	 top: 60px;
  }
  
