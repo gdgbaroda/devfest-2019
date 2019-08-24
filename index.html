@@ -168,6 +168,7 @@
                     <div class="col-md-12 text-center text lcs" style="font-size: 45px; padding: 60px 0px 30px;">Learn. Create. Share.</div>
                     <div class="col-md-12 text-center text date-class" style="font-size: 65px; font-weight: 600">September 22, 2019
                     </div>
+                    <div id="countdown" class="col-md-12 text-center text lcs" style="font-size: 45px; padding: 60px 0px 30px;"></div>
                     <div class="col-md-12 text-center text " style="padding: 40px">
                         <button class="btn-box clearfixr theme-btn btn-style-one" id="sign-in-button">Subscribe</button>
                         <!--<a href="#" class="theme-btn btn-style-two">Buy Ticket</a>-->
@@ -771,6 +772,23 @@
 <!--Scroll to top-->
 <div class="scroll-to-top scroll-to-target" data-target="html" style="display: block;"><span
         class="fa fa-angle-double-up"></span></div>
+<script>
+var deadline = new Date("September 22, 2019 00:00:00").getTime();
+var x = setInterval(function() {
+var now = new Date().getTime();
+var t = deadline - now;
+var days = Math.floor(t / (1000 * 60 * 60 * 24));
+var hours = Math.floor((t%(1000 * 60 * 60 * 24))/(1000 * 60 * 60));
+var minutes = Math.floor((t % (1000 * 60 * 60)) / (1000 * 60));
+var seconds = Math.floor((t % (1000 * 60)) / 1000);
+document.getElementById("countdown").innerHTML = days + "d "
++ hours + "h " + minutes + "m " + seconds + "s ";
+    if (t < 0) {
+        clearInterval(x);
+        document.getElementById("countdown").innerHTML = "";
+    }
+}, 1000);
+</script> 
 <script src="js/jquery.js"></script>
 <script src="/__/firebase/6.3.0/firebase-app.js"></script>
 <script src="/__/firebase/6.3.0/firebase-auth.js"></script>
