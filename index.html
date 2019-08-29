@@ -507,56 +507,56 @@
     </section>
     <!--End About Section -->
 
-    <!-- Location Section -->
-    <!-- <section class="location-section">
-        <span class="float-text">Get Directions</span>
-        <div class="anim-icons">
-            <span class="icon icon-dots wow zoomIn"></span>
-            <span class="icon icon-dots-2"></span>
+<!--End Sponsor Section -->
+  <!-- Location Section -->
+  <section class="location-section">
+    <div class="anim-icons">
+        <span class="icon icon-dots wow zoomIn"></span>
+        <span class="icon icon-dots-2"></span>
+        <span class="icon icon-lines"></span>
+    </div>
+    <div class="auto-container">
+        <div class="sec-title">
+            <h2>Location</h2>
         </div>
-        <div class="auto-container">
-            <div class="sec-title">
-                <h2>Location</h2>
-            </div>
 
-            <div class="row"> -->
-                <!-- Block Column -->
-                <!-- <div class="blocks-column col-lg-4 col-md-12 col-sm-12"> -->
-                    <!-- <div class="inner-column"> -->
-                        <!-- Location Block -->
-                        <!-- <div class="location-block wow fadeInUp">
-                            <div class="inner-box">
-                                <span class="icon icon-balloon"></span>
-                                <h4><a href="#">Conference Location</a></h4>
-                                <div class="text">Rashtrapati Bhavan, India</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="map-column col-lg-8 col-md-12 col-sm-12">
-                    <div class="inner-column wow fadeInRight">
-                        <div class="image-box">
-                            <figure class="image"><img src="images/resource/location-image.jpg" alt=""></figure>
-                        </div>
-                        <div class="map-box"> -->
-                            <!--Map Canvas-->
-                            <!-- <div class="map-canvas"
-                                 data-zoom="20"
-                                 data-lat="22.305828"
-                                 data-lng="73.185672"
-                                 data-type="roadmap"
-                                 data-hue="#ffc400"
-                                 data-title="GDG"
-                                 data-icon-path="images/icons/map-marker.png">
-                            </div>
+        <div class="row">
+            <!-- Block Column -->
+            <div class="blocks-column col-lg-4 col-md-12 col-sm-12">
+                <div class="inner-column">
+                    <!-- Location Block -->
+                    <div class="location-block wow fadeInUp">
+                        <div class="inner-box">
+                            <a href="https://goo.gl/maps/DGv2EjYxSMWgBzWn8" target="_blank">
+                            <span class="icon icon-balloon"></span>
+                            <h4>Hotel Sayaji<br><br>Parshuram Nagar, Sayajiganj, Vadodara, Gujarat 390001</h4>
+                        </a>
                         </div>
                     </div>
                 </div>
             </div>
+
+            <div class="map-column col-lg-8 col-md-12 col-sm-12">
+                <div class="inner-column wow fadeInRight">
+                    <div class="image-box">
+                        <figure class="image"><img src="images/resource/sayaji.jpeg" alt=""></figure>
+                    </div>
+                    <div class="map-box">
+                        <!--Map Canvas-->
+                        <div class="map-canvas"
+                            data-zoom="17"
+                            data-lat="22.305828"
+                            data-lng="73.185672"
+                            data-type="styled_map"
+                            data-hue="#ffc400">
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-    </section> -->
-    <!--End Location Section -->
+    </div>
+</section>
+<!--End Location Section -->
 
     <!-- Partner Section -->
     <br><br><br><br><br>
@@ -805,7 +805,7 @@ document.getElementById("countdown").innerHTML = days + "d "
 <script src="js/wow.js"></script>
 <script src="js/script.js"></script>
 <!--Google Map APi Key-->
-<script src="https://maps.google.com/maps/api/js?key=AIzaSyBfEWMfXP5oFOdeASa5lUjNynph5Q9vO48"></script>
+<script src="https://maps.google.com/maps/api/js?key=AIzaSyBfEWMfXP5oFOdeASa5lUjNynph5Q9vO48&callback=initMap"></script>
 <script src="js/map-script.js"></script>
 <!--End Google Map APi-->
 </body>

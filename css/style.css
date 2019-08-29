@@ -3439,7 +3439,7 @@ Project:    	DevFest
  }
  
  .location-block .inner-box{
-	 padding: 43px 70px 40px 30px;
+	 padding: 40px 70px 40px 30px;
 	 background-color:#ffffff;
 	 box-shadow: 0 18px 32px rgba(11,11,77,.14);
  }
@@ -3514,8 +3514,8 @@ Project:    	DevFest
  
  .location-section .map-column .image img{
 	 display: block;
-	 width: 100%;
-	 height: auto;
+	 width: auto;
+	 height: 300px;
  }
  
  .location-section .map-box{
@@ -3523,7 +3523,7 @@ Project:    	DevFest
 	 right: 0;
 	 top: 0;
 	 height: 100%;
-	 width: 270px;
+	 width: 400px;
  }	
  
  .location-section .map-box .map-canvas{
