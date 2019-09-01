@@ -3161,6 +3161,7 @@ Project:    	DevFest
 	 width: 100%;
 	 background-image: url(../images/icons/pattern-1.png);
 	 background-position: right top;
+	 background-repeat: repeat-y;
 	 content: "";
 	 opacity: .12;
  }
