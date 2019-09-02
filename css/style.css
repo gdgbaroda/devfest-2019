@@ -325,7 +325,7 @@ Project:    	DevFest
 	border-radius: 8px;
 }
 
-.btn-style-one:hover{
+.btn-style-disable:hover{
 	color:#ffffff;
 	background-color: #a0a0a0;
 }
