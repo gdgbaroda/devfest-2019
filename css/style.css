@@ -312,6 +312,24 @@ Project:    	DevFest
 	 background-color: #0f9d57;
  }
  
+ /*Btn Style Disable*/
+ 
+ .btn-style-disable{
+	position:relative;
+	font-size:16px;
+	color:#ffffff;
+	line-height:20px;
+	font-weight:500;
+	padding:15px 40px 15px;
+	background-color: #a0a0a0;
+	border-radius: 8px;
+}
+
+.btn-style-one:hover{
+	color:#ffffff;
+	background-color: #a0a0a0;
+}
+ 
  /* List Style One */
  
  .list-style-one{
