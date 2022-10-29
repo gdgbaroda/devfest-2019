@@ -1,6 +1,6 @@
 {
   "name": "sendEmailConfirmation",
-  "description": "Send Email confirmation upon subscirbing to GDG DevFest Baroda 2019 Mailing list Firebase Functions",
+  "description": "Send Email confirmation upon subscirbing to GDG DevFest Baroda 2022 Mailing list Firebase Functions",
   "dependencies": {
     "firebase-admin": "8.2.0",
     "firebase-functions": "^3.1.0",
