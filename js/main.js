@@ -19,18 +19,23 @@ function InitBinding() {
   // Shortcuts to DOM Elements.
   // this.subscribeButton = document.getElementById('subscribe-button');
   this.signInButton = document.getElementById('sign-in-button');
-  this.signInButton2 = document.getElementById('sign-in-button-2');
+  this.unsubscribeButton = document.getElementById('unsubscribe-button');
+  //this.signInButton2 = document.getElementById('sign-in-button-2');
   this.emailContainer = document.getElementById('email-container');
 
   // Bind events.
   // this.subscribeButton.addEventListener('click', this.subscribe.bind(this));
   this.signInButton.addEventListener('click', this.signIn.bind(this));
-  this.signInButton2.addEventListener('click', this.signIn.bind(this));
+  this.unsubscribeButton.addEventListener('click', this.unsubscribe.bind(this));
+  //this.signInButton2.addEventListener('click', this.signIn.bind(this));
   firebase.auth().onAuthStateChanged(this.onAuthStateChanged.bind(this));
 }
 
 InitBinding.prototype.onAuthStateChanged = function(user) {
   if (user) {
+    this.signInButton.style.display = 'none';
+    this.unsubscribeButton.style.display = 'inline-block';
+
     this.emailContainer.value = user.email;
     // this.emailContainer.innerText = user.email;
     this.userRef = firebase.database().ref('users/' + user.uid);
@@ -44,6 +49,9 @@ InitBinding.prototype.onAuthStateChanged = function(user) {
   } else {
     if (this.userRef) {
       this.userRef.off();
+    } else {
+      this.signInButton.style.display = 'inline-block';
+      this.unsubscribeButton.style.display = 'none';
     }
   }
 };
@@ -63,6 +71,12 @@ InitBinding.prototype.subscribe = function() {
     subscribedToMailingList: true,
     email: firebase.auth().currentUser.email
   });
+};
+
+// Remove user from firebase
+InitBinding.prototype.unsubscribe = function() {
+  firebase.auth().currentUser.delete()
+    return firebase.database().ref('users/' + firebase.auth().currentUser.uid).remove();
 };
 
 window.addEventListener('load', function() {

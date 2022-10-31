@@ -239,7 +239,7 @@ Project:    	DevFest
  }
  
  .btn-style-one:hover{
-	 color:#0f9d57;
+	 color:#0f9d57 !important;
 	 background-color: #ffffff;
  }
  
