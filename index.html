@@ -118,33 +118,50 @@
                 <div class="row align-items-center">
                     <div class="col-md-5 align-right">
                         <div>
-                            <img src="images/main-slider/logo.svg" title="" style="align-content: center; padding-left: 80px">
+                            <img src="images/main-slider/logo.svg" title=""
+                                 style="align-content: center; padding-left: 80px">
                         </div>
                     </div>
                     <div class="mbr-white col-md-6">
                         <h2>GDG DevFest</h2>
                         <h1>Baroda 2022</h1>
                     </div>
-                    <div class="col-md-12 text-center text lcs" style="font-size: 30px; padding: 30px 0px 30px;">Learn. Create. Share.</div>
-                    <div class="col-md-12 text-center text date-class" style="font-size: 45px; font-weight: 600">December 24, 2022
+                    <div class="col-md-12 text-center text lcs" style="font-size: 30px; padding: 30px 0px 30px;">Learn.
+                        Create. Share.
                     </div>
-                    <div id="countdown" class="col-md-12 text-center text lcs" style="font-size: 30px; padding: 30px 0px 30px;"></div>
-                    
+                    <div class="col-md-12 text-center text date-class" style="font-size: 45px; font-weight: 600">
+                        December 24, 2022
+                    </div>
+                    <div id="countdown" class="col-md-12 text-center text lcs"
+                         style="font-size: 30px; padding: 30px 0px 30px;"></div>
+
                     <div class="auto-container social-links" style="font-size: 40px;">
-                            <a href="https://bit.ly/join_gdgbaroda" target="_blank"><span class="fab fa-slack" style="padding: 10px; color: #ffffff;"></span></a>
-                            <a href="https://gdg.community.dev/gdg-baroda" target="_blank"><span class="fab fa-google" style="padding: 10px; color: #ffffff;"></span></a>
-                            <a href="https://www.linkedin.com/company/gdgbaroda" target="_blank"><span class="fab fa-linkedin" style="padding: 10px; color: #ffffff;"></span></a>
-                            <a href="https://instagram.com/gdgbaroda" target="_blank"><span class="fab fa-instagram" style="padding: 10px; color: #ffffff;"></span></a>
-                            <a href="https://www.facebook.com/gdgbaroda" target="_blank"><span class="fab fa-facebook-f" style="padding: 10px; color: #ffffff;"></span></a>
-                            <a href="https://www.twitter.com/gdgbaroda" target="_blank"><span class="fab fa-twitter" style="padding: 10px; color: #ffffff;"></span></a>
-                            <a href="https://www.youtube.com/c/gdgbaroda" target="_blank"><span class="fab fa-youtube" style="padding: 10px; color: #ffffff;"></span></a>
+                        <a href="https://bit.ly/join_gdgbaroda" target="_blank"><span class="fab fa-slack"
+                                                                                      style="padding: 10px; color: #ffffff;"></span></a>
+                        <a href="https://gdg.community.dev/gdg-baroda" target="_blank"><span class="fab fa-google"
+                                                                                             style="padding: 10px; color: #ffffff;"></span></a>
+                        <a href="https://www.linkedin.com/company/gdgbaroda" target="_blank"><span
+                                class="fab fa-linkedin" style="padding: 10px; color: #ffffff;"></span></a>
+                        <a href="https://instagram.com/gdgbaroda" target="_blank"><span class="fab fa-instagram"
+                                                                                        style="padding: 10px; color: #ffffff;"></span></a>
+                        <a href="https://www.facebook.com/gdgbaroda" target="_blank"><span class="fab fa-facebook-f"
+                                                                                           style="padding: 10px; color: #ffffff;"></span></a>
+                        <a href="https://www.twitter.com/gdgbaroda" target="_blank"><span class="fab fa-twitter"
+                                                                                          style="padding: 10px; color: #ffffff;"></span></a>
+                        <a href="https://www.youtube.com/c/gdgbaroda" target="_blank"><span class="fab fa-youtube"
+                                                                                            style="padding: 10px; color: #ffffff;"></span></a>
                     </div>
-                    
+
                     <div class="col-md-12 text-center text" style="padding: 40px">
                         <div class="col-md-12 text-center small-text">Registration starting soon!</div>
-                        <button id="sign-in-button" class="theme-btn btn-style-two">Sign In to Subscribe</button>
-                        <button id="unsubscribe-button" class="theme-btn btn-style-two">Unsubscribe</button>
-                        </div>
+                        <!--
+                            <button id="sign-in-button" class="theme-btn btn-style-two">Sign In to Subscribe</button>
+                            <button id="unsubscribe-button" class="theme-btn btn-style-two">Unsubscribe</button>
+                        -->
+                        <a id="subscribe-button" href="https://app.monstercampaigns.com/c/l228fcxv1ex37hmnauit/"
+                           class="theme-btn btn-style-two">Subscribe</a>
+                        <a id="cfs-button" target="_blank" href="https://sessionize.com/devfestbaroda2022/"
+                           class="theme-btn btn-style-two">Call For Speakers</a>
                     </div>
                 </div>
             </div>
@@ -822,6 +839,7 @@ document.getElementById("countdown").innerHTML = days + "d "
 }, 1000);
 </script> 
 <script src="js/jquery.js"></script>
+<script src="https://js.instamojo.com/v1/checkout.js"></script>
 <script src="/__/firebase/6.3.0/firebase-app.js"></script>
 <script src="/__/firebase/6.3.0/firebase-auth.js"></script>
 <script src="/__/firebase/6.3.0/firebase-database.js"></script>
@@ -840,5 +858,9 @@ document.getElementById("countdown").innerHTML = days + "d "
 <script src="https://maps.google.com/maps/api/js?key=AIzaSyBfEWMfXP5oFOdeASa5lUjNynph5Q9vO48&callback=initMap"></script>
 <script src="js/map-script.js"></script>
 <!--End Google Map APi-->
+
+<!-- This site is converting visitors into subscribers and customers with OptinMonster - https://optinmonster.com -->
+<script>(function(d,u,ac){var s=d.createElement('script');s.type='text/javascript';s.src='https://a.omappapi.com/app/js/api.min.js';s.async=true;s.dataset.user=u;s.dataset.account=ac;d.getElementsByTagName('head')[0].appendChild(s);})(document,34190,24947);</script>
+<!-- / OptinMonster -->
 </body>
 </html>

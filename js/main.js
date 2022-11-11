@@ -26,7 +26,8 @@ function InitBinding() {
   // Bind events.
   // this.subscribeButton.addEventListener('click', this.subscribe.bind(this));
   this.signInButton.addEventListener('click', this.signIn.bind(this));
-  this.unsubscribeButton.addEventListener('click', this.unsubscribe.bind(this));
+  //this.unsubscribeButton.addEventListener('click', this.unsubscribe.bind(this));
+  //this.subscribeButton.addEventListener('click', this.subscribe.bind(this));
   //this.signInButton2.addEventListener('click', this.signIn.bind(this));
   firebase.auth().onAuthStateChanged(this.onAuthStateChanged.bind(this));
 }
@@ -67,10 +68,10 @@ InitBinding.prototype.signIn = function() {
 
 // Subscribe to the newsletter.
 InitBinding.prototype.subscribe = function() {
-  return firebase.database().ref('users/' + firebase.auth().currentUser.uid).set({
+  /*return firebase.database().ref('users/' + firebase.auth().currentUser.uid).set({
     subscribedToMailingList: true,
     email: firebase.auth().currentUser.email
-  });
+  });*/
 };
 
 // Remove user from firebase
